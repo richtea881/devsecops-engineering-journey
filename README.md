@@ -85,3 +85,34 @@ docs(linux): document setgid shared directory lab
 Learning outcome
 
 Demonstrated practical understanding of Linux setgid directory behaviour, group inheritance, and access-control fundamentals relevant to DevSecOps engineering.
+
+
+Linux Administration — Week 1
+
+Day 2: Shared Directories and setgid Group Inheritance
+
+Objective: Configure a Linux shared directory with controlled group access and automatic group ownership inheritance.
+
+Environment: Kali Linux 2026 (VMware)
+
+Practical work completed:
+
+* Created /opt/devops-project.
+* Assigned directory ownership to root:devops-lab.
+* Applied 2770 permissions to enable setgid and restrict access.
+* Verified that devopsuser could create files in the shared directory.
+* Confirmed that the new file inherited the devops-lab group using ls -l and stat.
+
+Security concepts demonstrated:
+
+* Linux users and groups.
+* File and directory permissions.
+* Group-based access control.
+* setgid directory inheritance.
+* File ownership verification.
+
+Assessment: Knowledge quiz — 87.5%; independent exercise — 100%.
+
+Detailed lab record: Day 2 — Linux Shared Directories and setgid Group Inheritance
+
+Environment and scope: Controlled Kali Linux learning lab; not a production deployment.
