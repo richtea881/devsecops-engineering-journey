@@ -1,118 +1,66 @@
-# devsecops-engineering-journey
-Linux Administration Lab 02: Shared Directories and Setgid Group Inheritance
+DevSecOps Engineering Journey
 
-Status: Completed and verified
-Date: 11 November 2026
-Environment: Kali Linux 2026
+Welcome to my hands-on journey into DevOps, DevSecOps, Cloud Engineering, Linux Administration, and Cybersecurity.
 
-Project overview
+This repository documents my continuous learning, practical labs, technical exercises, projects, and lessons as I develop the skills required to build, automate, secure, and maintain modern technology infrastructure.
 
-This practical exercise demonstrates how Linux setgid directory permissions support controlled collaboration through consistent group ownership.
+About This Journey
 
-Objective
+I am an IT professional expanding my technical capabilities through structured training and independent, hands-on practice.
 
-Create and verify a shared Linux project directory in which files inherit the directory’s group while retaining ownership by the user who created them.
+My learning currently follows two complementary tracks:
 
-Lab architecture
+1. TS Academy — DevOps Engineering
 
-* Linux user: devopsuser
-* Shared group: devops-lab
-* Directory: /opt/devops-project
-* Directory owner: root
-* Directory group: devops-lab
-* Directory permissions: 2770
+I am undertaking a four-month DevOps Engineering training programme at TS Academy, covering:
 
-Implementation and verification
+* DevOps culture and Linux fundamentals
+* Linux administration and Bash scripting
+* Git and version control
+* Docker and containerisation
+* AWS cloud computing
+* Terraform and Infrastructure as Code
+* CI/CD with GitHub Actions
+* Kubernetes and Helm
+* Monitoring, logging, and deployment strategies
+* Final practical project
 
-The existing directory was inspected using:
+2. Independent DevSecOps Learning
 
-ls -ld /opt/devops-project
+Alongside formal training, I am following an independent practical learning roadmap focused on integrating security into development and operations.
 
-The user and group memberships were verified using:
+This includes Linux security, networking, scripting, cloud security, automation, application security, secure CI/CD, and infrastructure hardening.
 
-whoami
-id
+Technical Learning Areas
 
-A test file was created:
+Area	Focus
+Linux Administration	Users, groups, permissions, ownership, system management
+Networking	Network fundamentals, connectivity, troubleshooting
+Git & GitHub	Version control, commits, repositories, documentation
+Bash Scripting	Command-line automation and scripting
+Docker	Containers and application environments
+AWS	Cloud infrastructure and security
+Terraform	Infrastructure as Code
+CI/CD	Automated build, test, and deployment pipelines
+Kubernetes	Container orchestration
+DevSecOps	Security integration and secure delivery
 
-touch /opt/devops-project/day2-test.txt
+Practical Work and Documentation
 
-Ownership was checked:
+Each practical exercise is documented to demonstrate:
 
-ls -l /opt/devops-project/day2-test.txt
+* Learning objectives and technical concepts
+* Commands and procedures performed
+* Challenges encountered and solutions
+* Evidence from hands-on exercises
+* Security relevance and lessons learned
 
-Detailed metadata was inspected:
+My Approach
 
-stat /opt/devops-project/day2-test.txt
+I believe in learning by doing, documenting progress, understanding the underlying technology, and continuously improving through practical experience.
 
-Verified results
+This repository is a record of that process — not a claim of expertise, but evidence of consistent learning and technical development.
 
-The directory was owned by root:devops-lab with setgid enabled.
+⸻
 
-The test file was created with:
-
-* Owner: devopsuser
-* Group: devops-lab
-* Permissions: 0664
-* File size: 0 bytes
-
-This confirmed the expected group inheritance behaviour.
-
-Security relevance
-
-Consistent group ownership helps prevent collaboration problems and reduces pressure to grant excessive permissions to shared project files.
-
-The exercise also demonstrates that directory permissions and file permissions must be considered together.
-
-Scope and limitations
-
-This was an isolated local Linux lab using a Kali Linux virtual machine.
-
-No production system or public cloud resource was modified.
-
-The exercise verified group inheritance for one test file. It did not constitute a full multi-user access-control test.
-
-Evidence
-
-Terminal output was recorded during the exercise.
-
-Screenshots should be added to the evidence directory after capture.
-
-Suggested commit
-
-docs(linux): document setgid shared directory lab
-
-Learning outcome
-
-Demonstrated practical understanding of Linux setgid directory behaviour, group inheritance, and access-control fundamentals relevant to DevSecOps engineering.
-
-
-Linux Administration — Week 1
-
-Day 2: Shared Directories and setgid Group Inheritance
-
-Objective: Configure a Linux shared directory with controlled group access and automatic group ownership inheritance.
-
-Environment: Kali Linux 2026 (VMware)
-
-Practical work completed:
-
-* Created /opt/devops-project.
-* Assigned directory ownership to root:devops-lab.
-* Applied 2770 permissions to enable setgid and restrict access.
-* Verified that devopsuser could create files in the shared directory.
-* Confirmed that the new file inherited the devops-lab group using ls -l and stat.
-
-Security concepts demonstrated:
-
-* Linux users and groups.
-* File and directory permissions.
-* Group-based access control.
-* setgid directory inheritance.
-* File ownership verification.
-
-Assessment: Knowledge quiz — 87.5%; independent exercise — 100%.
-
-Detailed lab record: Day 2 — Linux Shared Directories and setgid Group Inheritance
-
-Environment and scope: Controlled Kali Linux learning lab; not a production deployment.
+Learning. Building. Automating. Securing.
