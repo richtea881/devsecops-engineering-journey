@@ -1,3 +1,4 @@
+![TS Academy Aurora Cohort DevOps Challenge](../assets/ts-academy-aurora-devops-challenge.jpg)
 TS Academy Aurora Cohort — 30-Day DevOps Learning Challenge
 
 About This Challenge
