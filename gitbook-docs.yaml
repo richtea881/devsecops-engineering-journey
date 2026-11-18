@@ -25,9 +25,8 @@ site:
           title: Linux Administration & DevSecOps
           path: linux-administration-and-devsecops
           default: true
-          draft: true
           content:
-            directory: ./linux-administration-and-devsecops
+            directory: ./linux-administration
     - type: section
       key: section-3
       title: ts-academy-devops/

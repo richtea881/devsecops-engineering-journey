@@ -1,12 +1,12 @@
 
 # Day 05 — Process Management and Service Administration
 
-**Programme:** Four-Month DevSecOps Engineering Journey  
-**Module:** Linux System Administration  
-**Week:** 02  
-**Environment:** Kali Linux 2026  
-**Virtualisation:** VMware Fusion  
-**Status:** Completed  
+**Programme:** Four-Month DevSecOps Engineering Journey
+**Module:** Linux System Administration
+**Week:** 01
+**Environment:** Kali Linux 2026
+**Virtualisation:** VMware Fusion
+**Status:** Completed
 **Assessment:** 15/15 (100%)
 
 ---
