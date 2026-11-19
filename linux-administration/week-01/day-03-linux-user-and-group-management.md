@@ -8,13 +8,13 @@ The objective was to understand how Linux identifies users, manages group member
 
 2. Learning Objectives
 
-* Understand Linux UID and GID.
-* Identify primary and supplementary groups.
-* Create and manage Linux user accounts.
-* Understand /etc/passwd and /etc/shadow.
-* Assign users to supplementary groups.
-* Verify account ownership and directory permissions.
-* Understand secure user offboarding and the principle of least privilege.
+- Understand Linux UID and GID.
+- Identify primary and supplementary groups.
+- Create and manage Linux user accounts.
+- Understand /etc/passwd and /etc/shadow.
+- Assign users to supplementary groups.
+- Verify account ownership and directory permissions.
+- Understand secure user offboarding and the principle of least privilege.
 
 3. Key Concepts
 
@@ -40,10 +40,11 @@ Linux commonly creates a group with the same name as a new user. This is known a
 
 4. Important Linux Account Files
 
-File	Purpose
-/etc/passwd	Stores basic user account information
-/etc/shadow	Stores password hashes and password-aging information
-/etc/group	Stores group information and supplementary membership details
+| File | Purpose |
+|---|---|
+| `/etc/passwd` | Stores basic user account information |
+| `/etc/shadow` | Stores password hashes and password-aging information |
+| `/etc/group` | Stores group information and supplementary membership details |
 
 The x in the password field of /etc/passwd indicates that password information is stored separately, normally in /etc/shadow.
 
@@ -144,14 +145,21 @@ day3test:x:1026:1026;;/home/day3test:/bin/sh
 Field interpretation:
 
 1. Username: day3test
+    
 2. Password placeholder: x
+    
 3. UID: 1026
+    
 4. Primary GID: 1026
+    
 5. GECOS/user information: Empty
+    
 6. Home directory: /home/day3test
+    
 7. Login shell: /bin/sh
-
+    
 6. Security Lessons
+    
 
 Principle of Least Privilege
 
@@ -169,11 +177,11 @@ Secure Account Offboarding
 
 When an employee leaves an organisation:
 
-* Disable or revoke account access.
-* Review supplementary and privileged group memberships.
-* Review SSH keys, active sessions and credentials.
-* Preserve required files and audit records.
-* Delete the account only after authorisation and retention requirements are addressed.
+- Disable or revoke account access.
+- Review supplementary and privileged group memberships.
+- Review SSH keys, active sessions and credentials.
+- Preserve required files and audit records.
+- Delete the account only after authorisation and retention requirements are addressed.
 
 7. Assessment
 
@@ -181,11 +189,11 @@ Final theory assessment: 5/5 (100%)
 
 Topics assessed:
 
-* Purpose of /etc/shadow.
-* Safe supplementary group management.
-* Meaning of UID.
-* Secure employee offboarding.
-* Purpose of useradd -m.
+- Purpose of /etc/shadow.
+- Safe supplementary group management.
+- Meaning of UID.
+- Secure employee offboarding.
+- Purpose of useradd -m.
 
 8. Practical Outcome
 
